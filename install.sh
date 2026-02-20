@@ -243,6 +243,15 @@ if [ "$LIGHT_MODE" != true ]; then
   install_node "ComfyUI-KJNodes" "https://github.com/kijai/ComfyUI-KJNodes.git"
 fi
 
+# rgthree-comfy (Power Lora Loader, Fast Groups Bypasser)
+install_node "rgthree-comfy" "https://github.com/rgthree/rgthree-comfy.git"
+
+# ComfyUI-Frame-Interpolation (FL_RIFE)
+install_node "ComfyUI-Frame-Interpolation" "https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git"
+
+# ComfyUI_Fill-Nodes (FindPerfectResolution)
+install_node "ComfyUI_Fill-Nodes" "https://github.com/filliptm/ComfyUI_Fill-Nodes.git"
+
 if [ -d "ComfyUI-Manager" ] && [ -d "ComfyUI-GGUF" ]; then
   ok "Custom nodes installes (Manager + GGUF verifies)"
 else
