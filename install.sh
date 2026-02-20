@@ -291,7 +291,6 @@ download_civitai() {
   [ -f "$dest" ] && rm -f "$dest"
   log "Telechargement CivitAI: $filename (~15 GB, patience)..."
   wget -q --show-progress \
-    --content-disposition \
     -O "$dest" \
     "$url" || {
     warn "Echec du telechargement de $filename - suppression"
